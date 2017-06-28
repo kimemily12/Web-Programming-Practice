@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>갬블링 게임</title>
+<script>
+function gamble(number) {
+    var element = document.getElementById('number'+number);
+    element.innerHTML = Math.floor(Math.random()*3);
+    if (number == 3) {
+    	var number1 = document.getElementById('number1').innerHTML;
+		var number2 = document.getElementById('number2').innerHTML;
+		var number3 = document.getElementById('number3').innerHTML;
+		var result = document.getElementById('Result');
+		if (number1 == number2 && number2 == number3 && number3 == number1) {
+			result.innerHTML = "승리";
+		} else {
+			result.innerHTML = "다시 시도";
+		}
+    }
+}
+</script>
+</head>
+<body id="parent">
+<h3>갬블링 게임</h3>
+<p>각 숫자를 클릭하면 0에서 2 사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.</p>
+<hr>
+<div style="background-color:pink; width:170px; font-size:5em; text-align:center; font-style:italic">
+<a id="number1" onclick="gamble(1)">0</a> <a id="number2" onclick="gamble(2)">0</a> <a id="number3" onclick="gamble(3)">0</a>
+</div>
+<p id="Result"></p>
+</body>
+</html> 
