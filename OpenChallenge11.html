@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>캔버스에 차트 그리기</title>
+</head>
+
+<body>
+<h3>학점 별로 학생 수를 입력하면 파이 차트로 비율 그리기</h3>
+<hr>
+A<input id="A" type="number">명
+B<input id="B" type="number">명
+C<input id="C" type="number">명<br>
+D<input id="D" type="number">명
+F<input id="F" type="number">명
+<button onclick="drawChart(event)">차트그리기</button><br>
+<div id="div"></div>
+<canvas id="myCanvas" style="background-color:aliceblue" width=500 height=300>
+</canvas>
+
+<script>
+var canvas, context;
+var colors = ["blue", "green", "yellow", "magenta", "red"];
+var grades = ["A", "B", "C", "D", "F"];
+
+function drawChart(e) {
+    var values = new Array(5);
+    var total = 0;
+    for (var k = 0; k < 5; k++) {
+        values[k] = parseInt(document.getElementById(grades[k]).value);
+        total += values[k];
+    }
+    
+
+    var percentage = [];
+    for (var j = 0; j < 5; j++) {
+        percentage[j] = values[j] / total * 100;
+    }
+
+    canvas = document.getElementById("myCanvas");
+    context = canvas.getContext("2d");
+
+    // Labels
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.font = "15px arial";
+    context.fillStyle = "blue";
+    for (var i = 0; i < 5; i++) {
+        context.fillText(grades[i]+"학점 "+percentage[i]+"%: "+colors[i], 10, 20+15*i);
+    }
+
+    var angles = new Array(5);
+    for (var l = 0; l < 5; l++) {
+        if (l == 0) angles[l] = 2*Math.PI*percentage[l]/100;
+        else angles[l] = angles[l-1] + 2*Math.PI*percentage[l]/100;
+    }
+
+    // Pie graph
+    for (var l = 0; l < 5; l++) {
+        context.beginPath();
+        context.fillStyle = colors[l];
+        context.moveTo(300, 150);
+        if (l > 0) {
+            context.arc(300, 150, 120, angles[l-1], angles[l], false);
+        } else {
+            context.arc(300, 150, 120, 0, angles[l], false);
+        }
+        context.closePath();
+        context.fill();
+    }
+}   
+</script>
+</body>
+</html> 
