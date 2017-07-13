@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Emily Kim</title>
+	<style>
+	body {
+		background-color: #003F32;
+	}
+
+	#logo {
+		position: absolute;
+		top: 7.5%;
+		left: 6.770833333%;
+		width: 8.229166666%;
+	}
+
+	#portrait {
+		position: absolute;
+		height: 82.321428571%;
+		bottom: 0;
+		left: 2.291666666%;
+
+	}
+
+	#portrait:hover {
+		-webkit-filter: drop-shadow(5px 5px 5px #222);
+  		filter: drop-shadow(5px 5px 5px #222);
+	}
+
+	#instagram, #facebook, #linkedin {
+		position: absolute;
+		height: 5.892857142%;
+		bottom: 5.892857142%;
+	}
+
+	#instagram {
+		left: 6.770833333%;
+	}
+
+	#facebook {
+		left: 12.083333333%;
+	}
+
+	#linkedin {
+		left: 17.395833333%;
+	}
+
+	#abouticon, #galleryicon, #resumeicon, #contacticon {
+		position: absolute;
+		height: 6.472321428%;
+		right: 6.5625%;
+	}
+
+	@keyframes move {
+		from { 
+				height: 6.472321428%; 
+				right: 6.5625%;
+
+			}
+	}
+
+	#abouticon {
+		top: 30.714285714%;
+	}
+
+	#galleryicon {
+		top: 41.25%;
+	}
+
+	#resumeicon {
+		bottom: 41.25%;
+	}
+
+	#contacticon {
+		bottom: 30.714285714%;
+	}
+
+	#abouticon:hover, #galleryicon:hover, #resumeicon:hover, #contacticon:hover {
+		-webkit-filter: drop-shadow(5px 5px 5px #222);
+  		filter: drop-shadow(5px 5px 5px #222);
+	}
+
+	</style>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<header>
+		<img id="logo" src="logo.png" onclick="returnHome(event)" alt="logo">
+	</header>
+	<content>
+		<img id="portrait" src="portraitart.png" alt="portrait">
+	</content>
+	<footer>
+		<a href="http://www.instagram.com/kimemily12"><img id="instagram" src="instaicon.png"></a>
+		<a href="http://www.facebook.com/kimemily12"><img id="facebook" src="facebookicon.png"></a>
+		<a href="http://www.linkedin.com/in/emily-kim-248671112"><img id="linkedin" src="linkedinicon.png"></a>
+	</footer>
+	<nav id="menu">
+		<a href><img id="abouticon" src="about.png" class="w3-animate-right"></a>
+		<a href><img id="galleryicon" src="gallery.png" class="w3-animate-right"></a>
+		<a href><img id="resumeicon" src="resume.png" class="w3-animate-right"></a>
+		<a href><img id="contacticon" src="contact.png" class="w3-animate-right"></a>
+	</nav>
+<script>
+function returnHome(e) {
+
+}
+</script>
+</body>
+</html>
