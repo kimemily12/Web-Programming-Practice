@@ -1,1 +1,61 @@
-<svg id="featured_content" data-name="featured content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80 80"><defs><style>.cls-1{mask:url(#mask);}.cls-2{fill:#fff;}.cls-3{filter:url(#luminosity-noclip);}</style><filter id="luminosity-noclip" x="40" y="40" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#fff" result="bg"/><feBlend in="SourceGraphic" in2="bg"/></filter><mask id="mask" x="0" y="0" width="80" height="80" maskUnits="userSpaceOnUse"><g class="cls-3"/></mask></defs><title>logo</title><g id="feat.header"><g class="cls-1"><rect class="cls-2" width="80" height="80"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="featured_content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{fill:#2D0D1F;}
+	.st2{font-family:'Menlo-Bold';}
+	.st3{font-size:23.3861px;}
+	.st4{mask:url(#SVGID_1_);fill:#FFFFFF;}
+</style>
+<font horiz-adv-x="2048">
+<!-- Menlo is a Trademark of Apple Inc. -->
+<!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Menlo-Bold" units-per-em="2048" underline-position="-130" underline-thickness="90"/>
+<missing-glyph horiz-adv-x="1233" d="M104,-362l0,1806l1024,0l0,-1806M219,-248l795,0l0,1577l-795,0z"/>
+<glyph unicode="E" horiz-adv-x="1233" d="M1098,0l-930,0l0,1493l930,0l0,-260l-635,0l0,-322l575,0l0,-260l-575,0l0,-391l635,0z"/>
+<glyph unicode="I" horiz-adv-x="1233" d="M172,1233l0,260l889,0l0,-260l-297,0l0,-973l297,0l0,-260l-889,0l0,260l297,0l0,973z"/>
+<glyph unicode="K" horiz-adv-x="1233" d="M117,1493l295,0l0,-590l462,590l334,0l-471,-588l488,-905l-328,0l-354,672l-131,-166l0,-506l-295,0z"/>
+<glyph unicode="L" horiz-adv-x="1233" d="M225,0l0,1493l295,0l0,-1233l631,0l0,-260z"/>
+<glyph unicode="M" horiz-adv-x="1233" d="M86,1493l352,0l178,-655l177,655l354,0l0,-1493l-254,0l0,1196l-158,-653l-235,0l-160,653l0,-1196l-254,0z"/>
+<glyph unicode="Y" horiz-adv-x="1233" d="M8,1493l318,0l290,-600l291,600l318,0l-461,-905l0,-588l-295,0l0,588z"/>
+</font>
+
+	<title>logo</title>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+		<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+		<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80" id="SVGID_1_">
+	<g class="st0">
+		<g>
+			<text transform="matrix(1.1446 0 0 1 9.8818 26.3779)" class="st1 st2 st3">E</text>
+		</g>
+		<g>
+			<text transform="matrix(1.1446 0 0 1 9.8818 48.4609)" class="st1 st2 st3">L</text>
+		</g>
+		<g>
+			<text transform="matrix(1.1446 0 0 1 10.5889 70.5415)" class="st1 st2 st3">I</text>
+		</g>
+		<g>
+			<text transform="matrix(1.1446 0 0 1 33.4365 26.3779)" class="st1 st2 st3">M</text>
+		</g>
+		<g>
+			<text transform="matrix(1.1446 0 0 1 32.7285 48.4609)" class="st1 st2 st3">Y</text>
+		</g>
+		<g>
+			<text transform="matrix(1.1446 0 0 1 33.4365 70.5415)" class="st1 st2 st3">M</text>
+		</g>
+		<g>
+			<text transform="matrix(1.1446 0 0 1 54.8682 26.3779)" class="st1 st2 st3">I</text>
+		</g>
+		<g>
+			<text transform="matrix(1.1446 0 0 1 54.8682 48.4609)" class="st1 st2 st3">K</text>
+		</g>
+	</g>
+</mask>
+<rect class="st4" width="80" height="80"/>
+</svg>

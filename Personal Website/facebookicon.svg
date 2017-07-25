@@ -1,1 +1,26 @@
-<svg id="featured_content" data-name="featured content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32.66 32.66"><defs><style>.cls-1{mask:url(#mask);}.cls-2{fill:#fff;}.cls-3{filter:url(#luminosity-noclip);}</style><filter id="luminosity-noclip" x="87.39" y="501.29" width="32.66" height="32.66" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-color="#fff" result="bg"/><feBlend in="SourceGraphic" in2="bg"/></filter><mask id="mask" x="0" y="0" width="32.66" height="32.66" maskUnits="userSpaceOnUse"><g class="cls-3"><g transform="translate(-87.39 -501.29)"><path d="M114.75,508.12h-3c-2.23,0-2.79,1.11-2.79,2.6v3.53h5.39l-0.74,5.57H109v14.12h-5.57V519.83H98.78v-5.57h4.64v-4.09c0-4.64,2.79-7.25,7.06-7.25,2,0,3.72.19,4.27,0.19v5h0Z"/></g></g></mask></defs><title>facebookicon</title><g id="feat.footer"><g id="footer_icon_set" data-name="footer icon set"><g class="cls-1"><rect id="fb_icon" data-name="fb icon" class="cls-2" width="32.66" height="32.66" rx="6" ry="6"/></g></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="featured_content" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 32.7 32.7" style="enable-background:new 0 0 32.7 32.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<defs>
+			<polyline id="SVGID_1_" points="0,0 32.7,0 32.7,32.7 0,32.7 0,0 			"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st0" d="M11.4,18.5V13H16V8.9c0-4.6,2.8-7.3,7.1-7.3c2,0,3.7,0.2,4.3,0.2v5v0h-3c-2.2,0-2.8,1.1-2.8,2.6V13H27
+			l-0.7,5.6h-4.6v14.1H16V18.5H11.4 M26.7,0H6C2.7,0,0,2.7,0,6v20.7c0,3.3,2.7,6,6,6h20.7c3.3,0,6-2.7,6-6V6C32.7,2.7,30,0,26.7,0"
+			/>
+	</g>
+</g>
+<title>facebookicon</title>
+<g>
+	<path d="M117,574.7h-3.2c-2.2,0-2.8,1.9-2.8,3.4v3.6h5.4l-0.7,5H111v14h-6v-14h-4v-5h4v-4.2c0-4.6,3.1-7.2,7.4-7.2
+		c2,0,3.6,0.2,4.6,0.2V574.7L117,574.7z"/>
+</g>
+</svg>

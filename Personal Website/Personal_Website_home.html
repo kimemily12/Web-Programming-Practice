@@ -5,16 +5,18 @@
 	<style>
 	body {
 		background-color: #003F32;
+		height: 100%;
 	}
 
 	#logo {
-		position: absolute;
+		position: fixed;
 		top: 7.5%;
 		left: 6.770833333%;
 		width: 8.229166666%;
 	}
 
 	#portrait {
+		display: none;
 		position: absolute;
 		height: 82.321428571%;
 		bottom: 0;
@@ -29,7 +31,7 @@
 
 	#instagram, #facebook, #linkedin {
 		position: absolute;
-		height: 5.892857142%;
+		height: 5%;
 		bottom: 5.892857142%;
 	}
 
@@ -49,14 +51,6 @@
 		position: absolute;
 		height: 6.472321428%;
 		right: 6.5625%;
-	}
-
-	@keyframes move {
-		from { 
-				height: 6.472321428%; 
-				right: 6.5625%;
-
-			}
 	}
 
 	#abouticon {
@@ -80,31 +74,221 @@
   		filter: drop-shadow(5px 5px 5px #222);
 	}
 
+	#studentex, #developerex, #designerex, #plannerex {
+		position: absolute;
+		display: none;
+		height: 8.7375%;
+	}
+
+	#student, #developer, #designer, #planner {
+		position: absolute;
+		display: none;
+		height: 2.874821428%;
+	}
+
+	#studenticon, #designericon, #developericon, #plannericon {
+		position: absolute;
+		display: none;
+	}
+
+	#studenticon {
+		position: absolute;
+		height: 11.599107142%;
+		top: 26.371964285%;
+	}
+
+	#designericon {
+		position: absolute;
+		height: 12.515892857%;
+		bottom: 26.971428572%;
+	}
+
+	#developericon {
+		position: absolute;
+		height: 7.590178571%;
+		top: 29.075178571%;
+	}
+
+	#plannericon {
+		position: absolute;
+		height: 13.49%;
+		bottom: 26.971428572%;
+	}
+
+	#student, #studentex, #designer, #designerex, #studenticon, #designericon {
+		left: 17.1834375%;
+	}
+
+	#developer, #developerex, #developericon, #planner, #plannerex, #plannericon {
+		left: 55.317083333%;
+	}
+
+	#student, #developer {
+		top: 41.64625%;
+	}
+
+	#studentex, #developerex {
+		top: 46.068392857%;
+	}
+
+	#designer, #planner {
+		top: 76.265178571%;
+	}
+
+	#designerex, #plannerex {
+		top: 80.963392857%;
+	}
+
+	#leave {
+		position: absolute;
+		top: 33.187321428%;
+		height: 6%;
+		display: none;
+	}
+
+	#phone, #email, #instagram.contact, #line1, #line2, #phone, #email, #leave {
+		position: absolute;
+		left: 10.5628125%;
+		display: none;
+	}
+
+	.contact {
+		top: 70%;
+		height: 7.372142857%;
+	}
+
+	#facebook.contact {
+		left: 16.558333333%;
+	}
+
+	#linkedin.contact {
+		left: 22.817395833%;
+	}
+
+	#line1 {
+		top: 39.91%;
+		width: 58.136666666%;
+	}
+
+	#line2 {
+		top: 66.519464285%;
+		width: 22.199375%;
+	}
+
+	#phone {
+		top: 48.631071428%;
+		height: 4.110178571%;
+	}
+
+	#email {
+		top: 54.107142857%;
+		height: 4.110178571%;
+	}
+
+	#linkto, #resumelink {
+		position: absolute;
+		display: none;
+		left: 15.104166666%;
+	}
+
+	#linkto {
+		top: 40.366071428%;
+		width: 41.146145833%;
+	}
+
+	#resumelink {
+		top: 51.584107142%;
+		width: 23.203229166%;
+	}
+
+	#resumelink:hover {
+		-webkit-filter: drop-shadow(5px 5px 5px #222);
+  		filter: drop-shadow(5px 5px 5px #222);
+	}
 	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#portrait, #facebook, #instagram, #linkedin").fadeIn("slow");
+			$("#abouticon, #galleryicon, #resumeicon, #contacticon").click(function() {
+				$("#abouticon").animate({ top: '12.638928571%', height: '4.384464285%', left: '41.881458333%' }, "slow");
+				$("#galleryicon").animate({ top: '12.638928571%', height: '4.384464285%', left: '53.542708333%' }, "slow");
+				$("#resumeicon").animate({ top: '12.638928571%', height: '4.384464285%',	left: '66.358541666%' }, "slow");
+				$("#contacticon").animate({ top: '12.638928571%', height: '4.384464285%', left: '80.328958333%' }, "slow");
+				$("#portrait, #facebook, #instagram, #linkedin").fadeOut('fast');
+			});
+			$("#abouticon").click(function() {
+				$("body").animate({ backgroundColor: '#002545' });
+				$("#student, #studentex, #studenticon, #developer, #developerex, #developericon, #planner, #plannerex, #plannericon, #designer, #designerex, #designericon").fadeIn('slow');
+				$("#leave, #leave, .contact, #phone, #email, #linkto, #resumelink").fadeOut("fast");
+			});
+			$("#resumeicon").click(function() {
+				$("body").animate({ backgroundColor: '#5E003C' });
+				$("#student, #studentex, #studenticon, #developer, #developerex, #developericon, #planner, #plannerex, #plannericon, #designer, #designerex, #designericon, #leave, .contact, #phone, #email").fadeOut('fast');
+				$("#linkto, #resumelink").fadeIn('slow');
+				$("#leave").fadeOut("fast");
+			});
+			$("#galleryicon").click(function() {
+				$("body").animate({ backgroundColor: '#007FF9' });
+				$("#student, #studentex, #studenticon, #developer, #developerex, #developericon, #planner, #plannerex, #plannericon, #designer, #designerex, #designericon, #leave, .contact, #phone, #email, #linkto, #resumelink").fadeOut('fast');
+				$("#leave").fadeOut("fast");
+			});
+			$("#contacticon").click(function() {
+				$("body").animate({ backgroundColor: '#B40069' });
+				$("#student, #studentex, #studenticon, #developer, #developerex, #developericon, #planner, #plannerex, #plannericon, #designer, #designerex, #designericon, #linkto, #resumelink").fadeOut('fast');
+				$("#instagram, #facebook, #linkedin").addClass("contact");
+				$("#leave, .contact, #phone, #email").fadeIn("slow");
+			});
+			$("#logo").click(function() {
+				location.reload();
+			})
+		});
+	</script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 	<header>
-		<img id="logo" src="logo.png" onclick="returnHome(event)" alt="logo">
+		<img id="logo" src="logo.svg" onclick="returnHome(event)" alt="logo">
 	</header>
-	<content>
-		<img id="portrait" src="portraitart.png" alt="portrait">
-	</content>
+	<section>
+		<img id="portrait" src="portraitart.svg" alt="portrait">
+		<img id="student" src="student-txt.svg" alt="student">
+		<img id="studentex" src="studentex-txt.svg" alt="studentex">
+		<img id="designer" src="designer-txt.svg" alt="designer">
+		<img id="designerex" src="designerex-txt.svg" alt="designerex">
+		<img id="developer" src="developer-txt.svg" slt="developer">
+		<img id="developerex" src="developerex-txt.svg" alt="developerex">
+		<img id="planner" src="planner-txt.svg" alt="planner">
+		<img id="plannerex" src="plannerex-txt.svg" alt="plannerex">
+		<img id="studenticon" src="studenticon.svg" alt="studenticon">
+		<img id="designericon" src="articon.svg" alt="articon">
+		<img id="developericon" src="codingicon.svg" alt="codingicon">
+		<img id="plannericon" src="ticketicon.svg" alt="ticketicon">
+		<img id="leave" src="leave_.svg" alt="leave">
+		<img id="phone" src="phone.svg" alt="phone">
+		<img id="email" src="email.svg" alt="email">
+		<img id="linkto" src="link_to_my_resume.png" alt="link">
+		<a href="Resume_Kim.pdf"><img id="resumelink" src="resumelink.png" alt="resumelink"></a>
+	</section>
 	<footer>
-		<a href="http://www.instagram.com/kimemily12"><img id="instagram" src="instaicon.png"></a>
-		<a href="http://www.facebook.com/kimemily12"><img id="facebook" src="facebookicon.png"></a>
-		<a href="http://www.linkedin.com/in/emily-kim-248671112"><img id="linkedin" src="linkedinicon.png"></a>
+		<a href="http://www.instagram.com/kimemily12"><img id="instagram" src="instaicon.svg"></a>
+		<a href="http://www.facebook.com/kimemily12"><img id="facebook" src="facebookicon.svg"></a>
+		<a href="http://www.linkedin.com/in/emily-kim-248671112"><img id="linkedin" src="linkedinicon.svg"></a>
 	</footer>
 	<nav id="menu">
-		<a href><img id="abouticon" src="about.png" class="w3-animate-right"></a>
-		<a href><img id="galleryicon" src="gallery.png" class="w3-animate-right"></a>
-		<a href><img id="resumeicon" src="resume.png" class="w3-animate-right"></a>
-		<a href><img id="contacticon" src="contact.png" class="w3-animate-right"></a>
+		<a href="javascript:base()">
+			<svg id="abouticon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.7 36.2" class="w3-animate-right"><defs><style>.cls-1,.cls-2{isolation:isolate;}.cls-2{font-size:31px;fill:#d1ccd3;font-family:Futura;}</style></defs><title>about</title><g class="cls-1"><text class="cls-2" transform="translate(0 27.3)">A</text><text class="cls-2" transform="translate(23 27.3)">B</text><text class="cls-2" transform="translate(41.1 27.3)">OUT</text></g></svg>
+		</a>
+		<a href="javascript:base()">
+			<svg id="galleryicon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.4 36.2" class="w3-animate-right"><defs><style>.cls-1{font-size:31px;fill:#d1ccd3;font-family:Futura;}.cls-2{letter-spacing:-1px;}</style></defs><title>gallery</title><text class="cls-1" transform="translate(0 27.3)"><tspan class="cls-2">G</tspan><tspan x="25.1" y="0">ALLE</tspan><tspan class="cls-2" x="93" y="0">R</tspan><tspan x="110.7" y="0">Y</tspan></text></svg>
+		</a>
+		<a href="javascript:base()">
+			<svg id="resumeicon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124.5 36.2" class="w3-animate-right"><defs><style>.cls-1{font-size:31px;fill:#d1ccd3;font-family:Futura;}</style></defs><title>resume</title><text class="cls-1" transform="translate(0 27.3)">RESUME</text></svg>
+		</a>
+		<a href="javascript:base()">
+			<svg id="contacticon" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.7 36.2" class="w3-animate-right"><defs><style>.cls-1{font-size:31px;fill:#d1ccd3;font-family:Futura;}.cls-2{letter-spacing:-1px;}</style></defs><title>contact</title><text class="cls-1" transform="translate(0 27.3)">C<tspan x="21.6" y="0">ON</tspan><tspan class="cls-2" x="75.4" y="0">T</tspan><tspan class="cls-2" x="89.1" y="0">A</tspan><tspan x="111" y="0">CT</tspan></text></svg>
+		</a>
 	</nav>
-<script>
-function returnHome(e) {
-
-}
-</script>
 </body>
 </html>
